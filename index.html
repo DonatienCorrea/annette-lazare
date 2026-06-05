@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annette & Lazare — Mariage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#accueil" class="nav-brand">A <span>&</span> L</a>
+            <ul class="nav-links">
+                <li><a href="#programme">Programme</a></li>
+                <li><a href="#tables">Plan de table</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="accueil" class="hero">
+        <div class="hero-content">
+            <p class="hero-pretitle">Nous nous marions</p>
+            <h1>Annette <span class="amp">&</span> Lazare</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-date">Samedi 13 juin 2026 · 15h00</p>
+        </div>
+    </header>
+
+    <!-- Programme -->
+    <section id="programme" class="timeline">
+        <div class="container">
+            <h2>Programme</h2>
+            <p class="section-subtitle">Le déroulé de cette belle journée</p>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Cérémonie</h3>
+                        <p class="time">15h00</p>
+                        <p>Rejoignez-nous pour la cérémonie</p>
+                        <p class="event-place">Église Saint-Pierre de Déville-lès-Rouen</p>
+                        <div class="event-links">
+                            <a href="https://www.google.com/maps/search/?api=1&query=%C3%89glise+Saint-Pierre+D%C3%A9ville-l%C3%A8s-Rouen" target="_blank" rel="noopener">Google Maps</a>
+                            <a href="https://waze.com/ul?q=%C3%89glise+Saint-Pierre+D%C3%A9ville-l%C3%A8s-Rouen&navigate=yes" target="_blank" rel="noopener">Waze</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Vin d'honneur &amp; séance photos</h3>
+                        <p class="time">Heure</p>
+                        <p>Partageons un verre le temps des photos</p>
+                        <p class="event-place">Lieu du vin d'honneur — Adresse, Ville</p>
+                        <div class="event-links">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Lieu+du+vin+d+honneur+Ville" target="_blank" rel="noopener">Google Maps</a>
+                            <a href="https://waze.com/ul?q=Lieu+du+vin+d+honneur+Ville&navigate=yes" target="_blank" rel="noopener">Waze</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Dîner</h3>
+                        <p class="time">Heure</p>
+                        <p>Dîner et célébration</p>
+                        <p class="event-place">5 rue Jules Ferry, Déville-lès-Rouen</p>
+                        <div class="event-links">
+                            <a href="https://www.google.com/maps/search/?api=1&query=5+rue+Jules+Ferry+D%C3%A9ville-l%C3%A8s-Rouen" target="_blank" rel="noopener">Google Maps</a>
+                            <a href="https://waze.com/ul?q=5+rue+Jules+Ferry+D%C3%A9ville-l%C3%A8s-Rouen&navigate=yes" target="_blank" rel="noopener">Waze</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Soirée dansante</h3>
+                        <p class="time">Heure</p>
+                        <p>Place à la danse !</p>
+                        <p class="event-place">Même lieu que le dîner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan de table / Recherche -->
+    <section id="tables" class="tables">
+        <div class="container">
+            <h2>Plan de table</h2>
+            <p class="section-subtitle">Recherchez votre nom pour trouver votre table</p>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="search-input"
+                    placeholder="Tapez votre nom…"
+                    autocomplete="off"
+                    aria-label="Rechercher un invité">
+                <button id="clearSearch" class="clear-search" aria-label="Effacer la recherche" type="button" hidden>&times;</button>
+            </div>
+
+            <div id="tablesContainer" class="tables-grid">
+                <!-- Les tables sont générées par JavaScript -->
+            </div>
+
+            <div id="noResults" class="no-results" hidden>
+                <p>Aucun invité trouvé. Vérifiez l'orthographe et réessayez.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="section-subtitle">Une question ? N'hésitez pas à nous écrire</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:contact@annette-lazare.fr">contact@annette-lazare.fr</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+33600000000">+33 6 00 00 00 00</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Des questions ?</h3>
+                    <p>Contactez-nous, nous vous répondrons avec plaisir !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-names">Annette <span class="amp">&</span> Lazare</p>
+        <p>&copy; 2026 · Avec amour</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
