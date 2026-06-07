@@ -7,12 +7,12 @@ const tables = [
         guests: ["Maman", "Tata Tall Aïdara", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Tonton Carlitou", "Soeur Yvonne", "Mariam Pèlund", "Pata Adama", "1 personne à compléter"],
     },
     {
-        name: "Bissau (Ados)",
+        name: "Bissau",
         guests: ["Dieudonne", "Paulette Iza", "Martha", "Ange Marie", "Bella", "Solinda Claude", "Fille de yaye Nicole", "Jeannette", "Étienne", "Fille de Claude"],
     },
     {
-        name: "Bula (Jeunes)",
-        guests: ["Enzo", "Meuwentar", "Jojo", "Emma Virginie", "Ethane Jacky", "Annita", "Gabriel", "Fils de Anthony", "Noela", "Marianne"],
+        name: "Bula",
+        guests: ["Enzo", "Meuwentar", "Jojo", "Emma Virginie", "Ethane Jacky", "Annita", "Gabriel", "Nolhan", "Noela", "Marianne"],
     },
     {
         name: "Thiour",
