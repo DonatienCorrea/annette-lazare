@@ -3,36 +3,72 @@
 // Guinée-Bissau / Sénégal). Adaptez librement les noms et les invités.
 const tables = [
     {
+        name: "Bassarel",
+        guests: ["Maman", "Tata Tall Aïdara", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Tonton Carlitou", "Soeur Yvonne", "Mariam Pèlund", "Pata Adama", "1 personne à compléter"],
+    },
+    {
+        name: "Bissau (Ados)",
+        guests: ["Dieudonne", "Paulette Iza", "Martha", "Ange Marie", "Bella", "Solinda Claude", "Fille de yaye Nicole", "Jeannette", "Étienne", "Fille de Claude"],
+    },
+    {
+        name: "Bula (Jeunes)",
+        guests: ["Enzo", "Meuwentar", "Jojo", "Emma Virginie", "Ethane Jacky", "Annita", "Gabriel", "Fils de Anthony", "Noela", "Marianne"],
+    },
+    {
+        name: "Thiour",
+        guests: ["Tata Yolande", "Pierre Guillaume", "Marie Benoit", "Rose Mado", "Sophie", "Charlie", "Raymond", "Frédéric", "Bertha"],
+    },
+    {
+        name: "Pèlund",
+        guests: ["Poconore", "Vinciane", "Manne Mairie", "Amma", "Oufeque", "Patrick", "Tata Marlene", "Tata Isabelle", "Tata Honorette"],
+    },
+    {
         name: "Canchungo",
-        guests: ["Marie Dupont", "Jean Martin", "Annick Fournier", "Camille Petit"],
+        guests: ["Donatien", "Clémence", "Daouda", "Céline", "Étienne", "Alexis", "Anthony", "Bébé André", "André Los"],
+    },
+    {
+        name: "Béniche",
+        guests: ["Isabelle", "Virginie", "Arminda", "Nenette", "Mami Sarr", "Amy Sarr", "Maria Mendes", "Inès", "Line Félicité"],
+    },
+    {
+        name: "Catdije",
+        guests: ["Claude", "Damina", "Laurent Nina", "Véronique Gomis", "Jacques", "Jean Jacques", "Joe CFA", "Peuthio", "Papeye"],
+    },
+    {
+        name: "Badiopi",
+        guests: ["Jean Paul", "Dominique", "Issa Sidibe", "Issa Thioubou", "Mamadou Ndiaye", "Alima Ndiaye", "Pape Saint Severt", "Ousmane", "Jean Baptiste"],
+    },
+    {
+        name: "Lonpath",
+        guests: ["Tata Mamatita", "Tata Odile", "Jean Marie Mamatita", "Tata Marie-Madeleine", "Tonton Étienne", "Tata Sophie", "Tonton Francis", "Mimi", "Soeur Line"],
+    },
+    {
+        name: "Île Bijagos",
+        guests: ["Tata Cécile", "Céline Hono", "Ikram", "Lamine Mamatina", "Fille Tata Cécile", "Tata Madeleine Hono", "Paulette Hono", "Sylvestre Hono", "Eveline Hono coiffeuse"],
+    },
+    {
+        name: "Oucougne",
+        guests: ["Tata Mirielle", "Yaye Nicole", "Rosa", "Jacky", "Germaine Idy", "Feli Laz", "Eveline Hono", "Marie Eveline", "Sergrame"],
+    },
+    {
+        name: "Bleukeus / Outhekor",
+        guests: ["Gina Bleukeus", "Gilbert Bleukeus", "Grand Jean-Pierre", "Sophie", "Papis", "Seba frère Idy", "Blaise Mendy", "Pascal Laz", "Femme de Pascal Laz"],
+    },
+    {
+        name: "Catió",
+        guests: ["Ferdinand Gomis", "Grand Henry", "Grand Richard", "Grand Pape", "Alain", "Ndassy", "Michèle Ines", "Émile Los", "Virginie Vernon"],
+    },
+    {
+        name: "Bara Mahma",
+        guests: ["Belle Mère", "Lifau", "Femme de tonton Benjamin", "Yety belle famille", "Tonton Benjamin", "Marie Dama", "Semba", "Choriste 1", "Choriste 2"],
+    },
+    {
+        name: "Babok",
+        guests: ["Marie Madeleine", "Tatiana", "Odile", "Sona", "Béatrice", "Charlotte", "Pascaline", "Marth Charlotte", "Choriste 3"],
     },
     {
         name: "Babanda",
-        guests: ["Sophie Laurent", "Pierre Blanc", "David Fontaine", "Hélène Roux"],
-    },
-    {
-        name: "Bleukeus",
-        guests: ["Isabelle Leclerc", "Marc Dubois", "Françoise Collet", "Antoine Garnier"],
-    },
-    {
-        name: "Pelundo",
-        guests: ["Claire Rousseau", "Louis Mercier", "Serge Germain", "Émilie Faure"],
-    },
-    {
-        name: "Cacheu",
-        guests: ["Nathalie Bernard", "André Lefevre", "Julie Lambert", "Thomas Noël"],
-    },
-    {
-        name: "Bula",
-        guests: ["Sylvie Simon", "Paul Moreau", "Caroline Vincent", "Hugo Marchand"],
-    },
-    {
-        name: "Pikine",
-        guests: ["Valérie Girard", "Michel Henry", "Laure Robin", "Nicolas Perrin"],
-    },
-    {
-        name: "Guediawaye",
-        guests: ["Brigitte Michel", "Eric Renard", "Sandrine Gauthier", "Olivier Roy"],
+        guests: ["Paul", "André", "Idy", "Nessa femme Idy", "Ninagui", "Nina", "Denis William", "Soeur Francine", "Choriste 4"],
     },
 ];
 
@@ -65,6 +101,71 @@ function escapeHtml(str) {
     const div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
+}
+
+/**
+ * Distance de Levenshtein entre deux chaînes (nombre minimal
+ * d'insertions / suppressions / substitutions pour passer de a à b).
+ */
+function levenshtein(a, b) {
+    if (a === b) return 0;
+    if (a.length === 0) return b.length;
+    if (b.length === 0) return a.length;
+
+    let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+    let curr = new Array(b.length + 1);
+
+    for (let i = 1; i <= a.length; i++) {
+        curr[0] = i;
+        for (let j = 1; j <= b.length; j++) {
+            const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+            curr[j] = Math.min(
+                prev[j] + 1,
+                curr[j - 1] + 1,
+                prev[j - 1] + cost
+            );
+        }
+        [prev, curr] = [curr, prev];
+    }
+
+    return prev[b.length];
+}
+
+/**
+ * Tolérance d'erreur autorisée selon la longueur du terme recherché.
+ */
+function fuzzyThreshold(term) {
+    const len = term.length;
+    if (len <= 3) return 1;
+    if (len <= 6) return 2;
+    return 3;
+}
+
+/**
+ * Plus petite distance entre le terme et un invité : 0 si le terme est
+ * contenu tel quel, sinon la meilleure correspondance approximative
+ * (par mot ou par fenêtre glissante de longueur proche du terme).
+ */
+function bestDistance(normGuest, normTerm) {
+    if (!normTerm) return Infinity;
+    if (normGuest.includes(normTerm)) return 0;
+
+    let best = Infinity;
+
+    for (const word of normGuest.split(/\s+/)) {
+        best = Math.min(best, levenshtein(word, normTerm));
+        if (best === 0) return 0;
+    }
+
+    const len = normTerm.length;
+    for (let win = Math.max(1, len - 1); win <= len + 1; win++) {
+        for (let i = 0; i + win <= normGuest.length; i++) {
+            best = Math.min(best, levenshtein(normGuest.slice(i, i + win), normTerm));
+            if (best === 0) return 0;
+        }
+    }
+
+    return best;
 }
 
 /**
@@ -106,44 +207,91 @@ function clearSearch() {
 /**
  * Affiche les tables. Si un terme est saisi, seules les tables
  * contenant au moins un invité correspondant restent visibles,
- * et les noms correspondants sont mis en avant.
+ * et les noms correspondants sont mis en avant. En l'absence de
+ * correspondance exacte, on propose les résultats les plus proches
+ * (tolérance aux fautes de frappe).
  */
 function render(term = '') {
     const normTerm = normalize(term);
     tablesContainer.innerHTML = '';
 
-    const tablesToShow = term === ''
-        ? tables
-        : tables.filter(table =>
-            table.guests.some(guest => normalize(guest).includes(normTerm))
-        );
+    if (term === '') {
+        noResults.hidden = true;
+        tables.forEach(table => {
+            tablesContainer.appendChild(createTableCard(table, term, new Set(table.guests)));
+        });
+        return;
+    }
 
-    if (tablesToShow.length === 0) {
+    // 1) Correspondances exactes (le terme est contenu dans le nom).
+    let matches = collectMatches(table => table.guests.filter(
+        guest => normalize(guest).includes(normTerm)
+    ));
+
+    let approximate = false;
+
+    // 2) Aucune correspondance exacte : on cherche les plus proches.
+    if (matches.length === 0) {
+        const threshold = fuzzyThreshold(normTerm);
+        matches = collectMatches(table => {
+            return table.guests.filter(
+                guest => bestDistance(normalize(guest), normTerm) <= threshold
+            );
+        }, table => Math.min(
+            ...table.guests.map(guest => bestDistance(normalize(guest), normTerm))
+        ));
+        approximate = matches.length > 0;
+    }
+
+    if (matches.length === 0) {
         noResults.hidden = false;
         return;
     }
 
     noResults.hidden = true;
 
-    tablesToShow.forEach(table => {
-        tablesContainer.appendChild(createTableCard(table, term, normTerm));
+    if (approximate) {
+        const notice = document.createElement('p');
+        notice.className = 'approx-notice';
+        notice.textContent = 'Aucune correspondance exacte. Voici les résultats les plus proches :';
+        tablesContainer.appendChild(notice);
+    }
+
+    matches.forEach(({ table, matchedGuests }) => {
+        tablesContainer.appendChild(createTableCard(table, term, matchedGuests));
     });
 }
 
 /**
- * Construit la carte d'une table avec sa liste d'invités.
+ * Parcourt les tables et renvoie celles ayant au moins un invité retenu
+ * par la fonction de filtrage fournie, triées par pertinence (distance).
  */
-function createTableCard(table, term, normTerm) {
+function collectMatches(filterFn, scoreFn) {
+    return tables
+        .map(table => ({
+            table,
+            matchedGuests: new Set(filterFn(table)),
+            score: scoreFn ? scoreFn(table) : 0,
+        }))
+        .filter(entry => entry.matchedGuests.size > 0)
+        .sort((a, b) => a.score - b.score);
+}
+
+/**
+ * Construit la carte d'une table avec sa liste d'invités.
+ * `matchedGuests` est l'ensemble des invités à mettre en avant.
+ */
+function createTableCard(table, term, matchedGuests) {
     const card = document.createElement('article');
     card.className = 'table-card';
 
-    const hasMatch = term !== '' &&
-        table.guests.some(guest => normalize(guest).includes(normTerm));
+    const hasMatch = term !== '' && matchedGuests.size > 0 &&
+        table.guests.some(guest => matchedGuests.has(guest));
     if (hasMatch) card.classList.add('is-match');
 
     const guestsHtml = table.guests
         .map(guest => {
-            const isMatch = term !== '' && normalize(guest).includes(normTerm);
+            const isMatch = term !== '' && matchedGuests.has(guest);
             return `<li class="${isMatch ? 'guest-match' : ''}">${highlight(guest, term)}</li>`;
         })
         .join('');
