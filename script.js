@@ -20,7 +20,7 @@ const tables = [
     },
     {
         name: "Pèlund",
-        guests: ["Poconore", "Vinciane", "Manne Mairie", "Amma", "Oufeque", "Patrick", "Tata Marlene", "Tata Isabelle", "Tata Honorette"],
+        guests: ["Poconore", "Vinciane", "Manne Mairie", "Ama", "Oufeque", "Patrick", "Tata Marlene", "Tata Isabelle", "Tata Honorette"],
     },
     {
         name: "Canchungo",
