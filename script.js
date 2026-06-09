@@ -44,7 +44,7 @@ const tables = [
     },
     {
         name: "Île Bijagos",
-        guests: ["Cécile Hono", "Céline Pinchon", "Ikram Bendelladji", "Fille Tata Cécile", "Tata Madeleine Hono", "Paulette Hono", "Sylvestre Gomis", "Patrice (Sylvestre)", "Eveline Cisse"],
+        guests: ["Cécile Hono", "Céline Pinchon", "Ikram Bendelladji", "Paulette Hono", "Sylvestre Gomis", "Patrice (Sylvestre)", "Eveline Cisse", "Libre", "Libre"],
     },
     {
         name: "Oucougne",
