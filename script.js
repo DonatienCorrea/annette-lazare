@@ -40,15 +40,15 @@ const tables = [
     },
     {
         name: "Lonpath",
-        guests: ["Tata Mamatita", "Tata Odile", "Jean Marie Mamatita", "Tata Marie-Madeleine", "Tonton Étienne", "Tata Sophie", "Tonton Francis", "Mimi", "Soeur Line"],
+        guests: ["Mama Titi Gomis", "Odile Planterose", "Madeleine Diatta", "Étienne Diatta", "Sophie Basse", "Francis Basse", "Georgina Mendy (Mimi)", "Soeur Line", "Jacqueline Correa"],
     },
     {
         name: "Île Bijagos",
-        guests: ["Tata Cécile", "Céline Hono", "Ikram", "Lamine Mamatina", "Fille Tata Cécile", "Tata Madeleine Hono", "Paulette Hono", "Sylvestre Hono", "Eveline Hono coiffeuse"],
+        guests: ["Cécile Hono", "Céline Pinchon", "Ikram Bendelladji", "Fille Tata Cécile", "Tata Madeleine Hono", "Paulette Hono", "Sylvestre Gomis", "Patrice (Sylvestre)", "Eveline Cisse"],
     },
     {
         name: "Oucougne",
-        guests: ["Tata Mirielle", "Yaye Nicole", "Rosa", "Jacky", "Germaine Idy", "Feli Laz", "Eveline Hono", "Marie Eveline", "Sergrame"],
+        guests: ["Tata Mirielle", "Yaye Nicole", "Rosa", "Jacky", "Germaine Idy", "Feli Laz", "Eveline Hono", "Stéphane Mari d'Eveline", "Sergrame"],
     },
     {
         name: "Bleukeus / Outhekor",
