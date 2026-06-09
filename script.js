@@ -48,7 +48,7 @@ const tables = [
     },
     {
         name: "Oucougne",
-        guests: ["Tata Mirielle", "Yaye Nicole", "Rosa", "Jacky", "Germaine Idy", "Feli Laz", "Eveline Gomis", "Stéphane Mari d'Eveline", "Sergrame"],
+        guests: ["Tata Mirielle", "Yaye Nicole", "Rosa", "Jacky", "Germaine Idy", "Feli Laz", "Eveline Faubert", "Stéphane Faubert", "Sergrame"],
     },
     {
         name: "Bleukeus / Outhekor",
