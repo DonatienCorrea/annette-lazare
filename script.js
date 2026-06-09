@@ -4,7 +4,7 @@
 const tables = [
     {
         name: "Bassarel",
-        guests: ["Maman", "Tata Tall Aïdara", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Tonton Carlitou", "Soeur Yvonne", "Mariam Pèlund", "Tata Adama", "Libre"],
+        guests: ["Anna Mendy", "Tata Tall Aïdara", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Carlitou Gomis", "Soeur Yvonne", "Mariam Pèlund", "Tata Adama", "Libre"],
     },
     {
         name: "Bissau",
