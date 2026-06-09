@@ -24,7 +24,7 @@ const tables = [
     },
     {
         name: "Canchungo",
-        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda", "Céline", "Étienne", "Alexis", "Anthony Correa", "Bébé André", "André Los"],
+        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda Sy", "Céline Gomis", "Étienne Gomis", "Alexis Gomis", "Anthony Correa", "Bébé André", "André Los"],
     },
     {
         name: "Béniche",
@@ -36,7 +36,7 @@ const tables = [
     },
     {
         name: "Badiopi",
-        guests: ["Jean Paul", "Dominique", "Issa Sidibe", "Issa Thioubou", "Mamadou Ndiaye", "Alima Ndiaye", "Pape Saint Severt", "Ousmane", "Jean Baptiste"],
+        guests: ["Jean Paul", "Dominique", "Issa Sidibe", "Issa Thioubou", "Mamadou Ndiaye", "Alima Ndiaye", "Pape Saint Severt", "Ousmane Sy", "Jean Baptiste"],
     },
     {
         name: "Lonpath",
