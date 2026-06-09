@@ -4,15 +4,15 @@
 const tables = [
     {
         name: "Bassarel",
-        guests: ["Maman", "Tata Tall Aïdara", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Tonton Carlitou", "Soeur Yvonne", "Mariam Pèlund", "Pata Adama", "1 personne à compléter"],
+        guests: ["Maman", "Tata Tall Aïdara", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Tonton Carlitou", "Soeur Yvonne", "Mariam Pèlund", "Tata Adama", "Libre"],
     },
     {
         name: "Bissau",
-        guests: ["Dieudonne", "Paulette Iza", "Martha", "Ange Marie", "Bella", "Solinda Claude", "Fille de yaye Nicole", "Jeannette", "Étienne", "Fille de Claude"],
+        guests: ["Dieudonne Correa", "Paulette Iza", "Martha", "Ange Marie", "Bella", "Solinda Claude", "Fille de yaye Nicole", "Jeannette", "Étienne", "Fille de Claude"],
     },
     {
         name: "Bula",
-        guests: ["Enzo", "Meuwentar", "Jojo", "Emma Virginie", "Ethane Jacky", "Annita", "Gabriel", "Nolhan", "Noela", "Marianne"],
+        guests: ["Enzo Correa", "Meuwentar", "Jojo", "Emma Virginie", "Ethane Jacky", "Annita", "Gabriel", "Nolhan Correa", "Noela", "Marianne"],
     },
     {
         name: "Thiour",
@@ -20,11 +20,11 @@ const tables = [
     },
     {
         name: "Pèlund",
-        guests: ["Poconore", "Vinciane", "Manne Mairie", "Ama", "Oufeque", "Patrick", "Tata Marlene", "Tata Isabelle", "Tata Honorette"],
+        guests: ["Pocounore Mendy", "Vinciane Leprince", "Marie-Madeleine Mendy (Mame Merry)", "Anna-Amarathieu Correa", "Oufèque Mendy", "Patrick Mendy", "Marlène Mendy", "Tata Isabelle", "Honorette Correa"],
     },
     {
         name: "Canchungo",
-        guests: ["Donatien", "Clémence", "Daouda", "Céline", "Étienne", "Alexis", "Anthony", "Bébé André", "André Los"],
+        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda", "Céline", "Étienne", "Alexis", "Anthony", "Bébé André", "André Los"],
     },
     {
         name: "Béniche",
