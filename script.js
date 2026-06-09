@@ -24,7 +24,7 @@ const tables = [
     },
     {
         name: "Canchungo",
-        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda", "Céline", "Étienne", "Alexis", "Anthony", "Bébé André", "André Los"],
+        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda", "Céline", "Étienne", "Alexis", "Anthony Correa", "Bébé André", "André Los"],
     },
     {
         name: "Béniche",
