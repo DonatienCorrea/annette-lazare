@@ -4,15 +4,15 @@
 const tables = [
     {
         name: "Bassarel",
-        guests: ["Anna Mendy", "Adji Aïdara Tall", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Carlitou Gomis", "Soeur Yvonne", "Mariam Pélund", "Tata Adama", "Libre"],
+        guests: ["Anna Mendy", "Adji Aïdara Tall", "Paulette Ndiaye", "Farcé Ndiaye", "Kinta Ndiaye", "Carlitou Gomis", "Soeur Yvonne", "Mariam Ndiaye", "Adama Ndiaye", "Libre"],
     },
     {
         name: "Bissau",
-        guests: ["Paulette Iza", "Martha", "Ange Marie", "Bella", "Solinda Claude", "Chantal", "Jeannette", "Étienne", "Fille de Claude", "Ethane Jacky"],
+        guests: ["Paulette Gomis (Iza)", "Martha Silva", "Ange Marie Silva", "Bella", "Solinda Claude", "Chantal", "Jeannette", "Étienne", "Fille de Claude", "Ethane Jacky"],
     },
     {
         name: "Bula",
-        guests: ["Enzo Correa", "Meuventar", "Jojo", "Emma Virginie", "Annita", "Gabriel", "Nolhan Correa", "Noela", "Maman (Soeur de Noela)", "Dieudonne Correa"],
+        guests: ["Enzo Correa", "Meuventar", "Jojo", "Emma Gomis (fille de Virginie)", "Annita", "Gabriel", "Nolhan Correa", "Noela", "Maman (Soeur de Noela)", "Dieudonne Correa"],
     },
     {
         name: "Thiour",
@@ -20,7 +20,7 @@ const tables = [
     },
     {
         name: "Pèlund",
-        guests: ["Pocounore Mendy", "Vinciane Leprince", "Marie-Madeleine Mendy (Mame Merry)", "Anna-Amarathieu Correa", "Patrick Mendy", "Marlène Mendy", "Tata Isabelle", "Honorrette Correa", "Alya"],
+        guests: ["Pocounore Mendy", "Vinciane Leprince", "Marie-Madeleine Mendy (Mame Merry)", "Anna-Amarathieu Correa", "Patrick Mendy", "Marlène Mendy", "Tata Isabelle", "Honorrette Correa", "Alya (Mendy)"],
     },
     {
         name: "Canchungo",
@@ -28,7 +28,7 @@ const tables = [
     },
     {
         name: "Béniche",
-        guests: ["Isabelle", "Virginie", "Arminda", "Nenette", "Mami Sarr", "Amy Sarr", "Maria Mendes", "Henriette", "Fama"],
+        guests: ["Isabelle Gomis", "Virginie Gomis", "Arminda", "Nenette", "Veronique Sarr (Mami)", "Amy Sarr", "Maria Mendes", "Henriette", "Fama"],
     },
     {
         name: "Catdije",
