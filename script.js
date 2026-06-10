@@ -12,7 +12,7 @@ const tables = [
     },
     {
         name: "Bula",
-        guests: ["Enzo Correa", "Meuventar", "Jojo", "Emma Virginie", "Annita", "Gabriel", "Nolhan Correa", "Noela", "Maman", "Dieudonne Correa"],
+        guests: ["Enzo Correa", "Meuventar", "Jojo", "Emma Virginie", "Annita", "Gabriel", "Nolhan Correa", "Noela", "Maman (Soeur de Noela)", "Dieudonne Correa"],
     },
     {
         name: "Thiour",
