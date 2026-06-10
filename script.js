@@ -52,27 +52,27 @@ const tables = [
     },
     {
         name: "Bleukeus / Outhekor",
-        guests: ["Gina Correa (Bleukeus)", "Gilbert Correa (Bleukeus)", "Grand Jean-Pierre", "Sophie", "Papis", "Seba frère Idy", "Blaise Mendy", "Pascal Laz", "Femme de Pascal Laz", "Copine de la femme de Pascal Laz"],
+        guests: ["Gina Correa (Bleukeus)", "Gilbert Correa (Bleukeus)", "Grand Jean-Pierre", "Sophie Mendy", "Papis Mendy", "Sebastien (Seba) frère Idy", "Blaise Mendy", "Pascal Preira Laz", "Femme de Pascal Laz", "Copine de la femme de Pascal Laz"],
     },
     {
         name: "Catió",
-        guests: ["Ferdinand Gomis", "Grand Henry", "Grand Richard", "Grand Pape", "Alain", "Ndassy", "Michèle Ines", "Émile Los", "Virginie Vernon"],
+        guests: ["Ferdinand Gomis", "Grand Henry", "Grand Richard", "Grand Pape (Mendy)", "Alain Mendy", "Ndassy Mendy", "Michèle (fille de Ines)", "Émilie Gomis (cousine de Laurent)", "Virginie Vernon"],
     },
     {
         name: "Bara Mahma",
-        guests: ["Belle Mère", "Lifau", "Femme de tonton Benjamin", "Yety belle famille", "Tonton Benjamin", "Marie Dama", "Semba", "Tata Mirielle", "Libre"],
+        guests: ["Syntha Gomis (Belle Mère)", "Lifau Mendy", "Yety", "Benjamin Mendy", "Meya (Femme de Benjamin)", "Marie N Dama", "Semba Mendy",  "Mireille Gomis", "Libre"],
     },
     {
         name: "Babok",
-        guests: ["Marie Madeleine", "Tatiana", "Odile", "Sona", "Béatrice", "Charlotte", "Miguel Charlotte", "Pascaline", "Libre"],
+        guests: ["Marie Madeleine Gomis", "Tatiana Mendy", "Odile Correa", "Sona Gomis", "Béatrice Mendy", "Charlotte (Kor)", "Miguel (Mari de Charlotte)", "Pascaline Mendy", "André Thiembe"],
     },
     {
         name: "Babanda",
-        guests: ["Paul", "André", "Idy", "Nessa femme Idy", "Nina", "Sœur de Nina", "Denis William", "Soeur Francine", "Laurent Paul"],
+        guests: ["Paul Mendy", "André Ndissan", "Idy", "Nessa femme Idy", "Nina Gomis", "Sœur de Nina", "Denise Gomis", "Soeur Francine", "Laurent Paul"],
     },
     {
         name: "Bolama",
-        guests: ["Déo Preira", "Thibault", "Louis", "Suzanne", "Marie", "Michel", "Fatima", "Betina", "Marena"],
+        guests: ["Déo Preira", "Thibault Dupont", "Louis (Choriste)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)"],
     },
 ];
 
