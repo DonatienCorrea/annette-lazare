@@ -20,7 +20,7 @@ const tables = [
     },
     {
         name: "Pèlund",
-        guests: ["Pocounore Mendy", "Vinciane Leprince", "Marie-Madeleine Mendy (Mame Merry)", "Anna-Amarathieu Correa", "Patrick Mendy", "Marlène Mendy", "Tata Isabelle", "Honorrette Correa", "Alya (Mendy)"],
+        guests: ["Pocounore Mendy", "Vinciane Leprince", "Marie-Madeleine Mendy (Mame Merry)", "Anna-Amarathieu Correa", "Patrick Mendy", "Marlène Mendy", "Tata Isabelle", "Honorette Correa", "Alya (Mendy)"],
     },
     {
         name: "Canchungo",
