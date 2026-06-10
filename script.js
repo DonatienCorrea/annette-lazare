@@ -83,6 +83,7 @@ const tablesContainer = document.getElementById('tablesContainer');
 const noResults = document.getElementById('noResults');
 const urlParams = new URLSearchParams(window.location.search);
 const showAllTables = urlParams.has('showAllTables') || urlParams.has('allTables') || urlParams.has('admin');
+const minSearchLength = 3;
 
 // ===== Écouteurs d'événements =====
 searchInput.addEventListener('input', handleSearch);
@@ -220,6 +221,7 @@ function clearSearch() {
 function render(term = '') {
     const normTerm = normalize(term);
     tablesContainer.innerHTML = '';
+    tablesContainer.hidden = false;
 
     if (term === '') {
         noResults.hidden = true;
@@ -228,12 +230,23 @@ function render(term = '') {
             prompt.className = 'search-prompt';
             prompt.textContent = 'Tapez un nom pour afficher votre table.';
             tablesContainer.appendChild(prompt);
+            tablesContainer.hidden = true;
             return;
         }
 
         tables.forEach(table => {
             tablesContainer.appendChild(createTableCard(table, term, new Set(table.guests)));
         });
+        return;
+    }
+
+    if (!showAllTables && normTerm.length < minSearchLength) {
+        noResults.hidden = true;
+        const prompt = document.createElement('p');
+        prompt.className = 'search-prompt';
+        prompt.textContent = `Tapez au moins ${minSearchLength} caractères pour afficher votre table.`;
+        tablesContainer.appendChild(prompt);
+        tablesContainer.hidden = true;
         return;
     }
 
