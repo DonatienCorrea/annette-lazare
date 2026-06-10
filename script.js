@@ -16,7 +16,7 @@ const tables = [
     },
     {
         name: "Thiour",
-        guests: ["Yolande Correa", "Père Pierre Guillaume Dupont", "Marie Benoit", "Rose Mado", "Sophie", "Frédéric", "Charlie Ndiaye", "Raymond", "Bertha Ndiaye (Correa)"],
+        guests: ["Yolande Correa", "Père Pierre Guillaume Dupont", "Marie Benoit", "Rose Mado", "Sophie", "Frédéric", "Charlie Ndiaye", "Raymond Lalyre", "Bertha Ndiaye (Correa)"],
     },
     {
         name: "Pèlund",
