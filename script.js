@@ -4,15 +4,15 @@
 const tables = [
     {
         name: "Bassarel",
-        guests: ["Anna Mendy", "Tata Tall Aïdara", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Carlitou Gomis", "Soeur Yvonne", "Mariam Pèlund", "Tata Adama", "Libre"],
+        guests: ["Anna Mendy", "Adji Aïdara Tall", "Tata Paulette", "Tonton Facer", "Tata Kinta", "Carlitou Gomis", "Soeur Yvonne", "Mariam Pélund", "Tata Adama", "Libre"],
     },
     {
         name: "Bissau",
-        guests: ["Dieudonne Correa", "Paulette Iza", "Martha", "Ange Marie", "Bella", "Solinda Claude", "Fille de yaye Nicole", "Jeannette", "Étienne", "Fille de Claude"],
+        guests: ["Paulette Iza", "Martha", "Ange Marie", "Bella", "Solinda Claude", "Chantal", "Jeannette", "Étienne", "Fille de Claude", "Ethane Jacky"],
     },
     {
         name: "Bula",
-        guests: ["Enzo Correa", "Meuwentar", "Jojo", "Emma Virginie", "Ethane Jacky", "Annita", "Gabriel", "Nolhan Correa", "Noela", "Marianne"],
+        guests: ["Enzo Correa", "Meuventar", "Jojo", "Emma Virginie", "Annita", "Gabriel", "Nolhan Correa", "Noela", "Maman", "Dieudonne Correa"],
     },
     {
         name: "Thiour",
@@ -20,15 +20,15 @@ const tables = [
     },
     {
         name: "Pèlund",
-        guests: ["Pocounore Mendy", "Vinciane Leprince", "Marie-Madeleine Mendy (Mame Merry)", "Anna-Amarathieu Correa", "Oufèque Mendy", "Patrick Mendy", "Marlène Mendy", "Tata Isabelle", "Honorette Correa"],
+        guests: ["Pocounore Mendy", "Vinciane Leprince", "Marie-Madeleine Mendy (Mame Merry)", "Anna-Amarathieu Correa", "Patrick Mendy", "Marlène Mendy", "Tata Isabelle", "Honorrette Correa", "Alya"],
     },
     {
         name: "Canchungo",
-        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda Sy", "Céline Gomis", "Étienne Gomis", "Alexis Gomis", "Anthony Correa", "Bébé André", "André Los"],
+        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda Sy", "Céline Gomis", "Étienne Gomis", "Alexis Gomis", "Anthony Correa", "André Los", "Oufeque Mendy"],
     },
     {
         name: "Béniche",
-        guests: ["Isabelle", "Virginie", "Arminda", "Nenette", "Mami Sarr", "Amy Sarr", "Maria Mendes", "Inès", "Line Félicité"],
+        guests: ["Isabelle", "Virginie", "Arminda", "Nenette", "Mami Sarr", "Amy Sarr", "Maria Mendes", "Henriette", "Fama"],
     },
     {
         name: "Catdije",
@@ -44,15 +44,15 @@ const tables = [
     },
     {
         name: "Île Bijagos",
-        guests: ["Cécile Hono", "Céline Pinchon", "Ikram Bendelladji", "Joséphine Mendy", "Sylvestre Gomis", "Patrice (Sylvestre)", "Eveline Cisse", "Libre", "Libre"],
+        guests: ["Cécile Hono", "Céline Pinchon", "Ikram Bendelladji", "Joséphine Mendy", "Sylvestre Gomis", "Patrice (Sylvestre)", "Eveline Cisse", "Inès", "Line Félicité"],
     },
     {
         name: "Oucougne",
-        guests: ["Tata Mirielle", "Yaye Nicole", "Rosa", "Jacky", "Germaine Idy", "Feli Laz", "Eveline Faubert", "Stéphane Faubert", "Sergrame"],
+        guests: ["Rosa", "Jacky", "Germaine Idy", "Feli Laz", "Eveline Faubert", "Stéphane Faubert", "Sergrame", "Femme de Sergrame", "Nicole Vanessa"],
     },
     {
         name: "Bleukeus / Outhekor",
-        guests: ["Gina Bleukeus", "Gilbert Bleukeus", "Grand Jean-Pierre", "Sophie", "Papis", "Seba frère Idy", "Blaise Mendy", "Pascal Laz", "Femme de Pascal Laz"],
+        guests: ["Gina Bleukeus", "Gilbert Bleukeus", "Grand Jean-Pierre", "Sophie", "Papis", "Seba frère Idy", "Blaise Mendy", "Pascal Laz", "Femme de Pascal Laz", "Copine de la femme de Pascal Laz"],
     },
     {
         name: "Catió",
@@ -60,15 +60,19 @@ const tables = [
     },
     {
         name: "Bara Mahma",
-        guests: ["Belle Mère", "Lifau", "Femme de tonton Benjamin", "Yety belle famille", "Tonton Benjamin", "Marie Dama", "Semba", "Choriste 1", "Choriste 2"],
+        guests: ["Belle Mère", "Lifau", "Femme de tonton Benjamin", "Yety belle famille", "Tonton Benjamin", "Marie Dama", "Semba", "Tata Mirielle", "Libre"],
     },
     {
         name: "Babok",
-        guests: ["Marie Madeleine", "Tatiana", "Odile", "Sona", "Béatrice", "Charlotte", "Pascaline", "Marth Charlotte", "Choriste 3"],
+        guests: ["Marie Madeleine", "Tatiana", "Odile", "Sona", "Béatrice", "Charlotte", "Miguel Charlotte", "Pascaline", "Libre"],
     },
     {
         name: "Babanda",
-        guests: ["Paul", "André", "Idy", "Nessa femme Idy", "Ninagui", "Nina", "Denis William", "Soeur Francine", "Choriste 4"],
+        guests: ["Paul", "André", "Idy", "Nessa femme Idy", "Nina", "Sœur de Nina", "Denis William", "Soeur Francine", "Laurent Paul"],
+    },
+    {
+        name: "Bolama",
+        guests: ["Déo", "Thibault", "Louis", "Suzanne", "Marie", "Michel", "Fatima", "Betina", "Marena"],
     },
 ];
 
