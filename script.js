@@ -24,7 +24,7 @@ const tables = [
     },
     {
         name: "Canchungo",
-        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda Sy", "Céline Gomis", "Étienne Gomis", "Alexis Gomis", "Anthony Correa", "André Gomis (Los)", "Oufeque Mendy"],
+        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda Sy", "Céline Gomis", "Étienne Gomis", "Alexis Gomis", "Anthony Correa", "André Gomis (Los)", "Louis (Choriste)", "Oufeque Mendy"],
     },
     {
         name: "Béniche",
@@ -72,7 +72,7 @@ const tables = [
     },
     {
         name: "Bolama",
-        guests: ["Déo Preira", "Thibault Dupont", "Louis (Choriste)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)", "Leosi"],
+        guests: ["Déo Preira", "Thibault Dupont", "Papy (mari de Marie-Madeleine)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)", "Leosi"],
     },
 ];
 
@@ -82,7 +82,7 @@ const clearButton = document.getElementById('clearSearch');
 const tablesContainer = document.getElementById('tablesContainer');
 const noResults = document.getElementById('noResults');
 const urlParams = new URLSearchParams(window.location.search);
-const showAllTables = urlParams.has('showAllTables') || urlParams.has('allTables') || urlParams.has('admin');
+const showAllTables = urlParams.has('showAllTables') || urlParams.has('allTables') || urlParams.has('all');
 const minSearchLength = 3;
 
 // ===== Écouteurs d'événements =====
