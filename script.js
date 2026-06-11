@@ -8,7 +8,7 @@ const tables = [
     },
     {
         name: "Bissau",
-        guests: ["Paulette Gomis (Iza)", "Martha Silva", "Ange Marie Silva", "Bella Basse", "Solinda Gomis (fille de Claude)", "Chantal", "Jeannette Mendy", "Étienne Mendy", "Thérèse Gomis (fille de Claude)", "Ethane (fils de Jacky)"],
+        guests: ["Paulette Gomis (Iza)", "Martha Silva", "Ange Marie Silva", "Bella Basse", "Solinda Gomis (fille de Claude)", "Chantal (+ sa maman ?)", "Jeannette Mendy", "Étienne Mendy", "Thérèse Gomis (fille de Claude)", "Ethane (fils de Jacky)"],
     },
     {
         name: "Bula",
