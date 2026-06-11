@@ -24,7 +24,7 @@ const tables = [
     },
     {
         name: "Canchungo",
-        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda Sy", "Céline Gomis", "Étienne Gomis", "Alexis Gomis", "Anthony Correa", "André Gomis (Los)", "Louis (Choriste)", "Oufeque Mendy"],
+        guests: ["Donatien Correa", "Clémence Gonzalez", "Daouda Sy", "Céline Gomis", "Étienne Gomis", "Alexis Gomis", "Anthony Correa", "André Gomis (Los)", "Louis", "Oufeque Mendy"],
     },
     {
         name: "Béniche",
@@ -60,7 +60,7 @@ const tables = [
     },
     {
         name: "Bara Mahma",
-        guests: ["Syntha Gomis (Belle Mère)", "Lifau Mendy", "Yety", "Benjamin Mendy", "Ndeythiou Mendy (Femme de Benjamin)", "Marie N Dama", "Semba Mendy",  "Mireille Gomis", "(Libre)"],
+        guests: ["Syntha Gomis (Belle Mère)", "Lifau Mendy", "Yety", "Benjamin Mendy", "Ndeythiou Mendy (Femme de Benjamin)", "Marie N Dama", "Semba Mendy",  "Mireille Gomis", "Nicolas"],
     },
     {
         name: "Babok",
@@ -72,7 +72,7 @@ const tables = [
     },
     {
         name: "Bolama",
-        guests: ["Déo Preira", "Thibault Dupont", "Papy (mari de Marie-Madeleine)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)", "Leosi"],
+        guests: ["Déo Preira", "Thibault Dupont", "Papy Gomis (mari de Marie-Madeleine)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)", "Leosi"],
     },
 ];
 
