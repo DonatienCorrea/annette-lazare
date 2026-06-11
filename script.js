@@ -4,7 +4,7 @@
 const tables = [
     {
         name: "Bassarel",
-        guests: ["Anna Mendy", "Adji Aïdara Tall", "Paulette Ndiaye", "Farcé Ndiaye", "Kinta Ndiaye", "Carlitou Gomis", "Soeur Yvonne", "Mariam Ndiaye", "Adama Ndiaye", "Libre"],
+        guests: ["Anna Mendy", "Adji Aïdara Tall", "Paulette Ndiaye", "Farcé Ndiaye", "Kinta Ndiaye", "Carlitou Gomis", "Soeur Yvonne", "Mariam Ndiaye", "Adama Ndiaye", "(Libre)"],
     },
     {
         name: "Bissau",
@@ -12,11 +12,11 @@ const tables = [
     },
     {
         name: "Bula",
-        guests: ["Enzo Correa", "Meuventar Gomis", "Joséphine Gomis (Jojo)", "Emma Gomis (fille de Virginie)", "Annita Mendy", "Gabriel Mendy", "Nolhan Correa", "Noela Gomis", "Maman Gomis (Soeur de Noela)", "Dieudonne Correa"],
+        guests: ["Enzo Correa", "Meuventar Gomis", "Joséphine Gomis (Jojo)", "Emma Gomis (fils de Virginie)", "Annita Mendy", "Gabriel Mendy", "Nolhan Correa", "Noela Gomis", "Maman Gomis (Soeur de Noela)", "Dieudonne Correa"],
     },
     {
         name: "Thiour",
-        guests: ["Yolande Correa", "Père Pierre Guillaume Dupont", "Marie Benoit", "Rose Mado", "Sophie", "Frédéric", "Charlie Ndiaye", "Raymond Lalyre", "Bertha Ndiaye (Correa)"],
+        guests: ["Yolande Correa", "Père Pierre Guillaume Dupont", "Marie Benoit Fall", "Rose Madeleine Sarr", "Sophie Kouary", "Frédéric Kouary", "Charlie Ndiaye", "Raymond Lalyre", "Bertha Ndiaye (Correa)"],
     },
     {
         name: "Pèlund",
@@ -32,7 +32,7 @@ const tables = [
     },
     {
         name: "Catdije",
-        guests: ["Claude Gomis", "Damina Gomis", "Laurent Gomis (Nina)", "Véronique Gomis", "Jacques Correa", "Jean Jacques", "Joe CFA", "Peuthio", "Laurent Mendy (Papeye)"],
+        guests: ["Claude Gomis", "Damina Gomis", "Laurent Gomis (Nina)", "Véronique Gomis", "Jacques Correa", "Jean Jacques", "Joe (CFA)", "Peuthio", "Laurent Mendy (Papeye)"],
     },
     {
         name: "Badiopi",
@@ -48,19 +48,19 @@ const tables = [
     },
     {
         name: "Oucougne",
-        guests: ["Rosa Gomis", "Jacky", "Germaine (soeur de Idy)", "Feli Laz (soeur de Idy)", "Eveline Faubert", "Stéphane Faubert", "Sergrame Mendy", "Femme de Sergrame", "Nicole Gomis (Vanessa)"],
+        guests: ["Rosa Gomis", "Jacky", "Germaine (soeur de Idy)", "Feli (soeur de Idy Laz)", "Eveline Faubert", "Stéphane Faubert", "Sergrame Mendy", "Femme de Sergrame", "Nicole Gomis (Vanessa)"],
     },
     {
         name: "Bleukeus / Outhekor",
-        guests: ["Gina Correa (Bleukeus)", "Gilbert Correa (Bleukeus)", "Grand Jean-Pierre", "Sophie Mendy", "Papis Mendy", "Sebastien (Seba) frère Idy", "Blaise Mendy", "Pascal Preira Laz", "Femme de Pascal Laz", "Copine de la femme de Pascal Laz"],
+        guests: ["Gina Correa (Bleukeus)", "Gilbert Correa (Bleukeus)", "Grand Jean-Pierre", "Sophie Mendy", "Papis Mendy", "Sebastien (Seba) frère Idy", "Blaise Mendy", "Pascal Gomis (Laz)", "Honorine Gomis (Femme de Pascal Laz)", "Amie d'Honorine Gomis (Pascal Laz)"],
     },
     {
         name: "Catió",
-        guests: ["Ferdinand Gomis", "Grand Henry", "Grand Richard", "Grand Pape (Mendy)", "Alain Mendy", "Ndassy Mendy", "Michèle (fille de Ines)", "Émilie Gomis (cousine de Laurent)", "Virginie Vernon"],
+        guests: ["Ferdinand Gomis", "Grand Henry", "Grand Richard", "Grand Pape (Mendy)", "Alain Mendy", "Ndassy Mendy", "Michèle (fille de Ines)", "Émilie Gomis (cousine de Laurent)", "Virginie (Vernon)"],
     },
     {
         name: "Bara Mahma",
-        guests: ["Syntha Gomis (Belle Mère)", "Lifau Mendy", "Yety", "Benjamin Mendy", "Meya (Femme de Benjamin)", "Marie N Dama", "Semba Mendy",  "Mireille Gomis", "Libre"],
+        guests: ["Syntha Gomis (Belle Mère)", "Lifau Mendy", "Yety", "Benjamin Mendy", "Ndeythiou Mendy (Femme de Benjamin)", "Marie N Dama", "Semba Mendy",  "Mireille Gomis", "(Libre)"],
     },
     {
         name: "Babok",
@@ -68,11 +68,11 @@ const tables = [
     },
     {
         name: "Babanda",
-        guests: ["Paul Mendy", "André Ndissan", "Idy", "Nessa femme Idy", "Nina Gomis", "Sœur de Nina", "Denise Gomis", "Soeur Francine", "Laurent Paul"],
+        guests: ["Paul Mendy", "André Ndissan", "Idy", "Nessa (femme d'Idy)", "Nina Gomis", "Sœur de Nina", "Denise Gomis", "Soeur Francine", "Laurent Paul"],
     },
     {
         name: "Bolama",
-        guests: ["Déo Preira", "Thibault Dupont", "Louis (Choriste)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)"],
+        guests: ["Déo Preira", "Thibault Dupont", "Louis (Choriste)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)", "Leosi"],
     },
 ];
 
@@ -173,6 +173,18 @@ function bestDistance(normGuest, normTerm) {
     }
 
     return best;
+}
+
+/**
+ * Nom affiché : en mode public, on retire les informations entre
+ * parenthèses (précisions de gestion). En mode admin, on garde tout.
+ */
+function displayName(name) {
+    if (showAllTables) return name;
+    return name
+        .replace(/\s*\([^)]*\)/g, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
 }
 
 /**
@@ -319,7 +331,7 @@ function createTableCard(table, term, matchedGuests) {
     const guestsHtml = table.guests
         .map(guest => {
             const isMatch = term !== '' && matchedGuests.has(guest);
-            return `<li class="${isMatch ? 'guest-match' : ''}">${highlight(guest, term)}</li>`;
+            return `<li class="${isMatch ? 'guest-match' : ''}">${highlight(displayName(guest), term)}</li>`;
         })
         .join('');
 
