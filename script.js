@@ -52,7 +52,7 @@ const tables = [
     },
     {
         name: "Bleukeus / Outhekor",
-        guests: ["Gina Correa (Bleukeus)", "Gilbert Correa (Bleukeus)", "Grand Jean-Pierre", "Sophie Mendy", "Papis Mendy", "Sebastien (Seba) frère Idy", "Blaise Mendy", "Pascal Gomis (Laz)", "Honorine Gomis (Femme de Pascal Laz)", "Amie d'Honorine Gomis (Pascal Laz)"],
+        guests: ["Gina Correa (Bleukeus)", "Gilbert Correa (Bleukeus)", "Grand Jean-Pierre", "Sophie Mendy", "Papis Mendy", "Sebastien - Seba (frère Idy)", "Blaise Mendy", "Pascal Gomis (Laz)", "Honorine Gomis (Femme de Pascal Laz)", "Amie d'Honorine Gomis (Pascal Laz)"],
     },
     {
         name: "Catió",
