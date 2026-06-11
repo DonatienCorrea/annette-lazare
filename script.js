@@ -28,7 +28,7 @@ const tables = [
     },
     {
         name: "Béniche",
-        guests: ["Isabelle Gomis", "Virginie Gomis", "Arminda Preira", "Nenette Dupont", "Veronique Sarr (Mami)", "Amy Sarr", "Maria Mendes", "Henriette", "Fama"],
+        guests: ["Isabelle Gomis", "Virginie Gomis", "Arminda Preira", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)"],
     },
     {
         name: "Catdije",
@@ -56,7 +56,7 @@ const tables = [
     },
     {
         name: "Catió",
-        guests: ["Ferdinand Gomis", "Grand Henry", "Grand Richard", "Grand Pape (Mendy)", "Alain Mendy", "Ndassy Mendy", "Michèle (fille de Ines)", "Émilie Gomis (cousine de Laurent)", "Virginie (Vernon)"],
+        guests: ["Ferdinand Gomis", "Grand Henry", "Grand Richard", "Grand Pape (Mendy)", "Alain Mendy", "Ndassy Mendy", "Michèle (fille de Ines)", "Émilie Gomis (cousine de Laurent)", "Virginie (Vernon)", "Mari de Virginie"],
     },
     {
         name: "Bara Mahma",
@@ -72,7 +72,7 @@ const tables = [
     },
     {
         name: "Bolama",
-        guests: ["Déo Preira", "Thibault Dupont", "Papy Gomis (mari de Marie-Madeleine)", "Suzanne (Choriste)", "Marie (Choriste)", "Michel (Choriste)", "Fatima (Choriste)", "Betina (Choriste)", "Marena (Choriste)", "Leosi"],
+        guests: ["Déo Preira", "Thibault Dupont", "Papy Gomis (mari de Marie-Madeleine)", "Leosi", "Nenette Dupont", "Veronique Sarr (Mami)", "Amy Sarr", "Maria Mendes", "Henriette", "Fama"],
     },
 ];
 
@@ -249,6 +249,7 @@ function render(term = '') {
         tables.forEach(table => {
             tablesContainer.appendChild(createTableCard(table, term, new Set(table.guests)));
         });
+        appendTotalCount();
         return;
     }
 
@@ -317,6 +318,18 @@ function collectMatches(filterFn, scoreFn) {
 }
 
 /**
+ * Affiche le nombre total d'invités (mode admin uniquement),
+ * en tête de la liste des tables.
+ */
+function appendTotalCount() {
+    const total = tables.reduce((sum, table) => sum + table.guests.length, 0);
+    const banner = document.createElement('p');
+    banner.className = 'total-count';
+    banner.textContent = `${total} personnes réparties sur ${tables.length} tables`;
+    tablesContainer.prepend(banner);
+}
+
+/**
  * Construit la carte d'une table avec sa liste d'invités.
  * `matchedGuests` est l'ensemble des invités à mettre en avant.
  */
@@ -335,10 +348,15 @@ function createTableCard(table, term, matchedGuests) {
         })
         .join('');
 
+    const countHtml = showAllTables
+        ? `<span class="table-count">${table.guests.length} personnes</span>`
+        : '';
+
     card.innerHTML = `
         <div class="table-card-header">
             <span class="table-label">Table</span>
             <span class="table-name">${escapeHtml(table.name)}</span>
+            ${countHtml}
         </div>
         <ul>${guestsHtml}</ul>
     `;

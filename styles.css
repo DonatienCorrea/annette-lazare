@@ -324,6 +324,24 @@ h2 {
     line-height: 1.2;
 }
 
+.table-card-header .table-count {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--gold);
+}
+
+.total-count {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.95rem;
+    color: var(--gold);
+}
+
 .table-card ul {
     list-style: none;
 }
