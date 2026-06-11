@@ -43,7 +43,7 @@ const tables = [
         guests: ["Mama Titi Gomis", "Odile Planterose", "Madeleine Diatta", "Étienne Diatta", "Sophie Basse", "Francis Basse", "Georgina Mendy (Mimi)", "Soeur Line", "Jacqueline Correa"],
     },
     {
-        name: "Île Bijagos",
+        name: "Îles Bijagos",
         guests: ["Cécile Hono", "Céline Pinchon", "Ikram Bendelladji", "Joséphine Mendy", "Sylvestre Gomis", "Patrice (Sylvestre)", "Eveline Cisse", "Inès (décoratrice)", "Line Félicité"],
     },
     {
